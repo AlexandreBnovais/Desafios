@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-family: Hanken Grotesk , sans-serif;
+}
+
+:root {
+    /* Primary*/
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradientes*/
+    --Light-slate-blue-background: #7857ff;
+    --Light-royal-blue-background: #2e2be9;
+    --Violet-blue-circle: #4e21ca;
+    --Persian-blue-circle: #2421ca00;
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 720px;
+    min-height: 450px;
+    border-radius: 25px;
+    box-shadow: 20px 25px 50px #afafaf;
+}
+
+.conteiner .toggle-left {
+    display: flex;
+    border-radius: 25px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to top, #2e2be9, #7857ff);
+}
+
+.conteiner .toggle-left h1 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--Light-lavender);
+}
+
+.conteiner .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top, #2421ca00, #4e21ca);
+    border-radius: 50%;
+}
+
+.conteiner .result p {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--White);
+}
+
+.conteiner .result .small {
+    color: var(--Light-lavender);
+}
+
+.conteiner .result-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 260px;
+    color: var(--Light-lavender);
+    padding: 20px 0;
+}
+
+.conteiner .result-text h1 {
+    font-size: 1.5em;
+    
+}
+
+
+/* Summary */
+
+.conteiner .toggle-right {
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.conteiner .toggle-right h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.conteiner .section-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    max-width: 100%;
+    height: 56px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.conteiner .section-note:hover {
+    transform: translateY(-10%);
+    box-shadow: 20px 25px 50px #afafaf;
+    transition: all 0.3s ease-in;
+}
+
+.conteiner .section-note .text {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#red {
+    background-color: #FFF6F5;
+}
+
+#yellow {
+    background-color: #f8f1e1;
+}
+
+#green {
+    background-color: #e9f9f7;
+}
+
+#blue {
+    background-color: #e7e7fc;
+}
+
+.conteiner .section-note .text-red {
+    color: var(--Light-red);
+    font-weight: bolder;
+}
+
+.conteiner .section-note .text-yellow {
+    color: var(--Orangey-yellow);
+    font-weight: bolder;
+}
+
+.conteiner .section-note .text-green {
+    color: var(--green-teal);
+    font-weight: bolder;
+}
+
+.conteiner .section-note .text-blue {
+    color: var(--Cobalt-blue);
+    font-weight: bolder;
+}
+
+.conteiner .section-note .mode-p {
+    color: var(--Light-lavender);
+}
+
+.conteiner .section-note .mode-weight {
+    font-weight: 600;
+    color: var(--Dark-gray-blue);
+}
+
+.conteiner .btn {
+    width: 100%;
+    height: 60;
+    padding: 15px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.conteiner .btn:hover {
+    background: linear-gradient(to bottom, #7857ff, #2e2be9);
+}
+
+@media (max-width: 780px) {
+    .conteiner {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+        min-width: 480px;
+    }
+}
