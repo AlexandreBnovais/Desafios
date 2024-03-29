@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: inter variable;
+    src: url(font/Inter-VariableFont_slnt\,wght.ttf) format(truetype);
+}
+
+:root {
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 14px;
+    font-family: inter variable , Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Off-Black);
+}
+
+.conteiner {
+    background-color: var(--Dark-Grey);
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: center;
+    border-radius: 15px;
+    width: 378px;
+    height: 604px;
+}
+
+.conteiner .image {
+    width: 8rem;
+}
+
+.conteiner .image img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.conteiner .person-text {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.conteiner .person-text h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--White);
+}
+
+.conteiner .person-text p {
+    color: var(--Green);
+    margin: 10px 0;
+}
+
+.conteiner .link {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.conteiner .link p {
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.conteiner .link .link-item {
+    background-color: var(--Grey);
+    width: 325px;
+    border-radius: 10px;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.conteiner .link .link-item a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.conteiner .link .link-item:hover {
+    background-color: var(--Green);
+    transition: all 0.3s ease;
+}
+
