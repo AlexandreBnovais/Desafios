@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+:root {
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: montserrat , sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    box-shadow: 20px 25px 50px rgba(0, 0, 0, 0.316);
+    height: 450px;
+    width: 600px;
+}
+
+.conteiner .image img {
+    width: 100%;
+    border-radius: 10px 0 0px 10px;
+}
+
+.conteiner .content {
+    padding: 30px;
+}
+
+.conteiner .content h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--Dark-cyan);
+    letter-spacing: 2px;
+    margin-bottom: 10px
+}
+
+.conteiner .content h1 {
+    font-family: fraunces;
+    margin: 15px 0;
+}
+
+.conteiner .content p {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 15px 0;
+    color: var(--Dark-grayish-blue);
+}
+
+.conteiner .content .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.conteiner .content .price .mode-price {
+    font-family: fraunces;
+    color: var(--Dark-cyan);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.conteiner .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    border-radius: 10px;
+    gap: 20px;
+    cursor: pointer;
+    background-color: var(--Dark-cyan);
+    transition: 0.3s ease;
+}
+
+.conteiner .content .btn p {
+    color: var(--White);
+    font-weight: 600;
+}
+
+.conteiner .content .btn:hover {
+    background-color: var(--Very-dark-blue);
+    transition: 0.3s ease;
+}
+
+
+@media (max-width: 606px) {
+    .conteiner {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 95%;
+        width: 80%;
+    }
+
+    .conteiner .image {
+        height: 100%;
+        
+    }
+
+    .conteiner .image img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .conteiner .content .btn {
+        margin-top: 0;
+    }
+}
