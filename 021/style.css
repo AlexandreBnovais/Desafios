@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,500&display=swap');
+
+:root {
+    /* PRIMARY COLOR */
+
+    --Almost-White: hsl(0, 0%, 98%;);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --max-width: 1400px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    font-family: Epilogue , sans-serif;
+}
+
+nav {
+    margin: auto;
+    max-width: 1400px;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    max-width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.links {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--Almost-Black);
+}
+
+.login {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--Almost-Black);
+}
+
+.login .btn {
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.section-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-toggle {
+    max-width: 100%;
+}
+
+.text-toggle h1 {
+    font-size: 4em;
+    font-weight: 600;
+    color: var(--Almost-Black);
+    padding: 3rem 0;
+}
+
+.text-toggle span {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px var(--Almost-Black);
+}
+
+.text-toggle p {
+    max-width: 400px;
+    line-height: 25px;
+    color: var(--Medium-Gray);
+    padding-bottom: 3rem;
+}
+
+.text-toggle .btn {
+    padding: 1rem 2rem;
+    background-color: var(--Almost-Black);
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin-bottom: 5em;
+}
+
+.section-figure {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 100%;
+}
+
+.image-toggle {
+    max-width: 400px;
+    margin: auto;
+}
+
+.image-toggle img {
+    width: 100%;
+}
+
+
+
+/* MEDIA SIZE */
+
+@media (max-width: )

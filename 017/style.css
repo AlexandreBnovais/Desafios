@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* PRIMARY-COLOR */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+
+    /* NEUTRAL */
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner {
+    display: flex;
+    border-radius: 5px;
+    width: 800px;
+}
+
+.conteiner .content {
+    padding: 35px;
+}
+
+.conteiner .sedans {
+    background-color: var(--Bright-orange);
+}
+
+.conteiner .suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.conteiner .luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.conteiner .content .box-text {
+    height: 100%;
+}
+
+.conteiner .content .box-text img {
+    width: 30%;
+}
+
+.conteiner .content .box-text h1 {
+    font-size: 2.1em;
+    font-family: big shoulders display;
+    color: var(--Very-light-gray-background-headings-buttons);
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.conteiner .content .box-text p {
+    font-family: lexend deca;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--Transparent-white-paragraphs);
+
+}
+
+.conteiner .box-text .btn {
+    padding: 10px 20px;
+    margin-top: 50px;
+    background-color: transparent;
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.conteiner .box-text .btn:hover {
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    color: black;
+    transition: 0.3s ease;
+}
+
+
+@media (max-width: 665px) {
+    .conteiner {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    
+    }
+}
+
+@media (max-width: 798px) {
+    .conteiner {
+        max-width: 90%;
+     
+    }
+}

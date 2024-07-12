@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap');
+
+:root {
+    --background-color: #141259;
+    --hover: #49F2E1;
+    --button: #3BB2BF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins , sans-serif;
+}
+
+.conteiner {
+
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+.menu ul {
+    margin: 50px;
+    display: inline-flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.active {
+    color: var(--button) !important;
+}
+
+.signup-btn {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#141259,#141259),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    cursor: pointer;        
+}
+
+
+.signup-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.banner {
+    position: absolute;
+    top: 25%;
+    left: 130px;
+    height: 70%;
+    width: 80%;
+    color: #fff;
+}
+
+.app-text {
+    width: 50%;
+}
+
+.app-text h1 {
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.app-text p {
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.app-picture {
+    float: right;
+    width: 50%;
+}
+
+
+.app-picture img {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.play-btn {
+    margin-left: 40px;
+    display: inline-flex;
+}
+.play-btn-inner {
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#141259,#141259),radial-gradient(circle at top right,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.play-btn-inner .fa-solid {
+    padding: 18px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+small {
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #3BB2BF;
+}
+
+.social-icons {
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+
+.social-icons ul li {
+    list-style: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-icons ul li a {
+    padding: 5px;
+    color: #999;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: block;
+}
