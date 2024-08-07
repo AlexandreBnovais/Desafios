@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="asents/style/style.css">
+</head>
+<body>
+    <main class="conteiner">
+        <section class="toggle-left">
+            <form autocomplete="off" id="form">
+                <span>
+                    <h1>Mortgage Calculator</h1>
+                    <a id="clear" href="#">Clear All</a>
+                </span>
+
+                <div class="calculate-input">
+                    <div class="mortgage-value">
+                        <label for="amount">Mortgage Amount</label>
+                        <div id="amount-value" class="value-box">
+                            <i class="fa-solid fa-euro-sign"></i>
+                            <input type="text" name="amount" id="amount">
+                        </div>
+                    </div>
+
+                    <div class="mortgage-value flex">
+                        <div>
+                            <label for="term">Mortgage term</label>
+                            <div id="term-value" class="value-box">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <input type="text" name="term" id="term">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="rate">Mortgage rate</label>
+                            <div id="rate-value" class="value-box">
+                                <i class="fa-solid fa-percent"></i>
+                                <input type="text" name="rate" id="rate">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mortgage-type">
+                        <label for="type">mortgage type</label>
+                        <div class="type-box">
+                            <input type="radio" id="repayment">
+                            <p>repayment</p>
+                        </div>
+                        <div class="type-box">
+                            <input type="radio" id="interest">
+                            <p>Interest Only</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="btn">
+                    <img src="asents/images/icon-calculator.svg">
+                    Calculate Repayment
+                </button>
+            </form>
+        </section>
+
+
+        <section class="toggle-right">
+            <div class="conteiner-painel">
+                <img src="asents/images/illustration-empty.svg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At id assumenda incidunt maiores facilis, accusamus soluta reprehenderit enim? Magni sequi laborum quas recusandae dolorem delectus doloribus earum molestiae maxime perferendis?
+                    </p>
+            </div>
+            <div class="result active">
+                <h1>Your Result</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, omnis iusto, ratione adipisci nostrum a sit exercitationem.</p>
+                <div class="painel-result">
+                    <div class="box-items">
+                        <p>Your monthly repayment</p>
+                        <div class="item">
+                            <i class="fa-solid fa-euro-sign"></i>
+                            <span id="value">222</span>
+                        </div>
+                    </div>
+                    <div class="box-items">
+                        <p>Total you'll repay over the term</p>
+                        <div class="item size">
+                            <i class="fa-solid fa-euro-sign"></i>
+                            <span id="total">aaa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="asents/script/script.js"></script>
+</body>
+</html>
